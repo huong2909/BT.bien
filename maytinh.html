@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<input type="text"  id="hienlenday"><br>
+<button onclick="something(1)">1</button>
+<button onclick="something(2)">2</button>
+<button onclick="something('+')">+</button>
+<button onclick="tinh()">=</button>
+<button onclick="xoahet()">AC</button>
+
+<script>
+    function something(data) {
+        document.getElementById('hienlenday').value +=data
+    }
+    function tinh(){
+        document.getElementById('hienlenday').value =eval( document.getElementById('hienlenday').value)
+    }
+    function xoahet() {
+        document.getElementById('hienlenday').value = ''
+    }
+</script>
+</body>
+</html>
